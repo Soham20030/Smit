@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smit's Portfolio</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+        publicKey: "E41O1vEro1gVxytDx",
+    });
+})();
+    </script>   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,17 +27,22 @@
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
+            <li><div id="toggle"><i class="indicator"></i></div></li>
         </ul>
 
         <ul>
             <li><a href="#" class="title-email">smitmistry@gmail.com</a></li>
             <li class="hideOnMobile"><a href="#home">HOME</a></li>
             <li class="hideOnMobile"><a href="#about">ABOUT</a></li>
-            <li class="hideOnMobile"><a href="#projects">PROJECTS</a></li>
+            <li class="hideOnMobile"><a href="./projects.html">PROJECTS</a></li>
             <li class="hideOnMobile"><a href="#contact">CONTACT</a></li>
+            <li class="hideOnMobile"><div id="toggle2"><i class="indicator"></i></div></li>
             <li class="menu-button" onClick=showSidebar()><a href="#"><img src="./images/menu-icon.png" alt="menu-icon"></a></li>
         </ul>
     </nav>
+
+
+
 
     <section id="home">
         <div class="home">
@@ -36,119 +51,129 @@
                 <p>Hello, I'm</p>
                 <h1>Smit Mistry</h1>
                 <p>AI & ML Engineer</p>
-                <button class="CV">DOWNLOAD CV</button>
-                <button class="contact-button">CONTACT ME</button>
+                <a href="https://drive.google.com/file/d/1aH_liVqAoQewvKJ4FLxQNPmBrfq73qoq/view?usp=drive_link">
+                    <button class="CV">DOWNLOAD CV</button>
+                </a>
+                <a href="#contact" class="contact-link">
+                    <button class="contact-button" id="contact-btn">CONTACT ME</button>
+                </a>
                 <br>
-                <img class="linkedin-icon" id="linkedin-icon" src="./images/linkedin.svg" alt="">
-                <img class="github-icon" id="github-icon" src="./images/github.svg"  alt="">
+                <a href="https://www.linkedin.com/in/smitm1/" class="contact-link">
+                    <img class="linkedin-icon" id="linkedin-icon" src="./images/linkedin.svg">
+                </a>
+                
+                <a href="https://github.com/SmitM1" class="contact-link">
+                    <img class="github-icon" id="github-icon" src="./images/github.svg"  alt="">
+                </a>
+                
                 <br>
-                <img src="./images/moon-line.svg" alt="" height="40" width="40" class="night-time" id="moon">
             </div>
         </div>
-        </div>
+        <img src="images/Page-1-Strips.png" class="Strips" id="strips1">
     </section>
 
+
+
+
     <section id="about">
-        <div class="about">
+        <div class="about" id="about1">
             <div class="about_info">
                 <p>My intro</p>
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> 
-                   Praesent vitae purus urna. Pellentesque nec fermentum <br> 
-                   sapien. Nullam in laoreet augue. Phasellus iaculis imperdiet <br>
-                   ultricies. Donec eu mauris id leo suscipit suscipit. <br> 
-                   Nulla in aliquam turpis. Nam pellentesque tincidunt pulvinar.
+                <p>
+                    AI/ML Engineer/Data Scientist proficient in developing cutting-edge <br>
+                    algorithms and models.Passionate about solving complex problems <br>
+                    and delivering impactful solutions. A quick learner who enjoys <br>
+                    collaborating with a team to achieve project success.
                 </p>
-                <button class="contact-button2">CONTACT ME</button>
+                <a href="#contact">
+                    <button class="contact-button2">CONTACT ME</button>
+                </a>
+
             </div>
             <img src="./images/Ellipse 2.svg" alt="" id="ellipse">
         </div>
     </section>
+
+
+
     <section id="skills">
-            <div class="skills">
-                <div class="skill_info">
-                    <p>Favourite Skills</p>
-                    <h1>My Skills</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                       Praesent vitae purus urna. Pellentesque nec fermentum <br> 
-                       sapien. Nullam in laoreet augue. Phasellus iaculis imperdiet <br> 
-                       ultricies.
-                    </p>
+        <img src="./images/Skills-Slice1.png" id="skills-slice1">
+        <img src="./images/Skills-Slice2.png" id="skills-slice2">
+        <div class="skills" id="skills1">
+            <div class="skill_info">
+                <p>Favourite Skills</p>
+                <h1>My Skills</h1>
+                <p>Discover the depth of my abilities and execution, tailored <br> 
+                    to deliver top-notch projects for you.
+                </p>
+                <a href="./projects.html">
                     <button class="projects-button">SEE PROJECTS</button>
-                </div>
-    
-                <div class="skill-lists">
-                    <ol class="listss" id="listss">
-                        <li>HTML & CSS</li>
-                        <li>Javascript</li>
-                        <li>Bootstrap</li>
-                        <li>React</li>
-                    </ol>
-    
-                    <ol class="listss">
-                        <li>MongoDB</li>
-                        <li>Express</li>
-                        <li>NodeJS</li>
-                    </ol>
-                </div>
-            </div>
-    </section>
+                </a>
 
-    <section id="projects">
-        <div class="projects">
-            <div class="projects-info">
-                <p>My jobs</p>
-                <h1>Recent Projects</h1> 
             </div>
 
-            <div class="grid-container">
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
+            <div class="skill-lists">
+                <ol class="listss" id="listss">
+                    <li>Python</li>
+                    <li>TensorFlow/Keras</li>
+                    <li>Convolutional Neural Networks</li>
+                    <li>Recurrent Neural Networks</li>
+                </ol>
 
-        </div>
-    </section>
-
-
-    <section id="contact">
-        <div class="contact">
-            <div class="contact-title">
-                <h2>Get in Touch</h2>
-                <h1>Contact Me</h1>
-            </div>
-            <form action="" class="contact-left">
-                <input type="text" name="name" placeholder="Your name" class="contact-inputs notarea" required>
-                <br>
-                <input type="email" name="email" placeholder=" Your email" class="contact-inputs notarea" required>
-                <br>
-                <textarea name="message" placeholder="Your message" class="contact-inputs area" required></textarea>
-                <br>
-                <button class="cont-btn" type="submit">SEND MESSAGE</button>
-            </form>
-        </div>
-    </section>
-
-    <section id="footer">
-        <div class="footer">
-            <div class="footer-info">
-                <h1>Smit Mistry</h1>
-                <p>AI & ML Engineer</p>
-            </div>
-
-            <div class="icons">
-                <img class="linkedin-icon"  src="./images/linkedin.svg" alt="" height="48" width="48">
-                <img class="github-icon"  src="./images/github.svg"  alt="" height="48" width="48">
-            </div>
-
-            <div class="copyright">
-                © Copyright Smit Mistry. All rights reserved
+                <ol class="listss">
+                    <li>Long Short-Term Memory (LSTM)</li>
+                    <li>Natural Language Processing (NLP)</li>
+                    <li>MySQL</li>
+                    <li>Flask</li>
+                </ol>
             </div>
         </div>
-    </section>
-    
+</section>
+
+
+<section id="contact">
+    <div class="contact">
+        <div class="contact-title">
+            <h2>Get in Touch</h2>
+            <h1>Contact Me</h1>
+        </div>
+        <div>
+            <input type="text" name="name" id="fullName" placeholder="Your name" class="contact-inputs notarea" required>
+            <br>
+            <input type="email" name="email"  id="email_id" placeholder=" Your email" class="contact-inputs notarea" required>
+            <br>
+            <textarea name="message" id="message" placeholder="Your message" class="contact-inputs area" required></textarea>
+            <br>
+            <button onclick="sendMail()"  class="cont-btn">SEND MESSAGE</button>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="footer">
+    <div class="footer">
+        <div class="first">
+            <h1>Smit Mistry</h1>
+            <p>AI & ML Engineer</p>
+        </div>
+
+        <div class="second">
+            <a href="https://www.linkedin.com/in/smitm1/" class="contact-link">
+                <img src="./images/linkedin.svg" class="foot-linkedin">
+            </a>
+            <a href="https://github.com/SmitM1" class="contact-link">
+                <img src="./images/github.svg" class="foot-github">
+            </a>
+        </div>
+
+        <div class="third">
+            <p>© Copyright Smit Mistry. All rights reserved</p>
+            
+        </div>
+    </div>
+</section>
 
 
 

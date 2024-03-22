@@ -8,75 +8,53 @@ function hideSidebar() {
     sidebar.style.display = 'none';
 }
 
+const home = document.getElementById('home');
+const toggle = document.getElementById('toggle');
+const profile = document.getElementById('circle1');
+const strips = document.getElementById('strips1');
+const about = document.getElementById('about1');
+const contactBtn = document.getElementById('contact-btn');
+const skills = document.getElementById('skills');
+const skillStrips1 = document.getElementById('skills-slice1');
+const skillStrips2 = document.getElementById('skills-slice2');
+const contact = document.getElementById('contact');
+toggle.onclick = function(){
+    toggle.classList.toggle('active');
+    home.classList.toggle('active');
+    profile.classList.toggle('active');
+    toggle2.classList.toggle('active');
+    strips.classList.toggle('active');
+    about.classList.toggle('active');
+    contactBtn.classList.toggle('active');
+    skills.classList.toggle('active');
+    skillStrips1.classList.toggle('active');
+    skillStrips2.classList.toggle('active');
+    contact.classList.toggle('active');
+}
 
-var moon = document.getElementById('moon');
-var circle1 = document.getElementById('circle1');
-var github = document.getElementById('github-icon');
-var linkedin = document.getElementById('linkedin-icon');
-var ellipse = document.getElementById('ellipse');
-var listItems = document.querySelectorAll('#listss li');
-
-
-moon.addEventListener('click', function() {
-
-    if (moon.classList.contains('night-time')){
-        moon.src = './images/sun-line.svg';
-        moon.classList.add('day-time');
-        moon.classList.remove('night-time');
-        circle1.src = './images/Group 2-light.svg';
-        github.src = './images/github-light.svg';
-        linkedin.src = './images/linkedin-dark.svg';
-        ellipse.src = './images/Ellipse 2-light.svg';
-    }
-
-    else if (moon.classList.contains('day-time')){
-        moon.src = './images/moon-line.svg';
-        moon.classList.remove('day-time');
-        moon.classList.add('night-time');
-        circle1.src = './images/Group 2.svg'
-        github.src = './images/github.svg';
-        linkedin.src = './images/linkedin.svg';
-        ellipse.src = './images/Ellipse 2.svg';
-    }
-});
-
-
-moon.onclick = function() {
-    document.body.classList.toggle("light-theme");
+const toggle2 = document.getElementById('toggle2');
+toggle2.onclick = function(){
+    toggle2.classList.toggle('active');
+    home.classList.toggle('active');
+    profile.classList.toggle('active');
+    toggle.classList.toggle('active');
+    strips.classList.toggle('active');
+    about.classList.toggle('active');
+    contactBtn.classList.toggle('active');
+    skills.classList.toggle('active');
+    skillStrips1.classList.toggle('active');
+    skillStrips2.classList.toggle('active');
+    contact.classList.toggle('active');
 }
 
 
-
-
-
-
-// const moon = document.querySelector('.moon');
-// moon.addEventListener('click', function() {
-//     moon.src = './images/sun-line.svg';
-//     moon.classList.add('day-time');
-// });
-
-// if (moon.classList.contains('day-time')) {
-//     const moon = document.querySelector('.moon');
-//     moon.addEventListener('click', function(){
-//     moon.src = './images/moon-line.svg';
-//     });
-// }
-
-
-
-
-
-if ('scrollBehavior' in document.documentElement.style === false) {
-    import('smoothscroll-polyfill').then(module => module.polyfill());
+function sendMail() {
+    var params = {
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("email_id").value,
+        message : document.getElementById("message").value
+    }
+    emailjs.send("service_yfnsaas","template_f2gkkrw" ,params).then(function(res){
+        alert("Success!" + res.status);
+    })
 }
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
