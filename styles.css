@@ -240,7 +240,7 @@ section#home.active div {
 
 
 img#circle1.group2.active {
-    content: url(./images/Group\ 2-light.svg);
+    content: url(./images/Group\ 2-light.png);
 }
 
 
@@ -358,9 +358,7 @@ div#about1.about.active h1 {
     color: #000000;
 }
 
-div#about1.about.active img {
-    content: url(./images/Ellipse\ 2-light.svg);
-}
+
 
 div#about1.about.active .contact-button2 {
     background-color: #512BF1;
@@ -1000,8 +998,22 @@ section#contact.active h1 {
     font-size: 16px;
 }
 
+.proj-main-1 {
+    background-image: url(./images/chatbot-long\ .png);
+    
+}
+
+
 .proj-main-2 {
-    background-color: #888888;
+    background-image: url(./images/Voice-To-Text-long\ 1.png);
+}
+
+.proj-main-3 {
+    background-image: url(./images/analyzer-long.png);
+}
+
+.proj-main-4 {
+    background-image: url(./images/Price-prediction-long.png);
 }
 
 
@@ -1153,7 +1165,7 @@ section#contact.active h1 {
 /* SINGLE PROJECT SECTION */
 
 #single-project {
-    z-index: -10;
+    z-index: 2;
     position: relative;
     padding-top: 40px;
     padding-left: 75px;
@@ -1163,7 +1175,7 @@ section#contact.active h1 {
 }
 
 .single-project-slice {
-    z-index: -5;
+    z-index: -1;
     margin-top: 50px;
     position: absolute;
     bottom: 0;
@@ -1242,38 +1254,6 @@ section#contact.active h1 {
     padding-bottom: 0;
 }
 
-.slide {
-    display: flex;
-    gap: 40%;
-}
-
-.slide-container {
-    padding-right: 60px;
-    position: relative;
-}
-
-
-
-.slider {
-    position: relative;
-    z-index: 1;
-    padding-bottom: 20px;
-}
-
-
-.slider-left {
-    padding-left: 54px;
-    padding-top: 28px;
-    position: absolute;
-    z-index: 2;
-}
-
-.slider-right{
-    padding-left: 200px;
-    padding-top: 28px;
-    position: absolute;
-    z-index: 2;
-}
 
 
 #project-heading.active {
@@ -1282,6 +1262,14 @@ section#contact.active h1 {
 
 .No1 {
     padding-bottom: 40px;
+}
+
+.single-buttons-top{
+    z-index: 5;
+}
+
+.single-buttons-bottom {
+    z-index: 5;
 }
 
 
