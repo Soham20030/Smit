@@ -22,6 +22,20 @@ nav {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s; /* Add smooth transition effect */
+}
+
+
+.navbar.scrolled {
+    top: -100px; /* Adjust as needed */
+}
+
 nav ul {
     width: 100%;
     list-style: none;
