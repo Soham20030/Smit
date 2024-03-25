@@ -18,6 +18,8 @@ const skills = document.getElementById('skills');
 const skillStrips1 = document.getElementById('skills-slice1');
 const skillStrips2 = document.getElementById('skills-slice2');
 const contact = document.getElementById('contact');
+const project = document.getElementById('project-heading');
+const mainproj = document.getElementById('main-projects');
 toggle.onclick = function(){
     toggle.classList.toggle('active');
     home.classList.toggle('active');
@@ -30,6 +32,8 @@ toggle.onclick = function(){
     skillStrips1.classList.toggle('active');
     skillStrips2.classList.toggle('active');
     contact.classList.toggle('active');
+    project.classList.toggle('active');
+    mainproj.classList.toggle('active');
 }
 
 const toggle2 = document.getElementById('toggle2');
@@ -45,6 +49,8 @@ toggle2.onclick = function(){
     skillStrips1.classList.toggle('active');
     skillStrips2.classList.toggle('active');
     contact.classList.toggle('active');
+    project.classList.toggle('active');
+    mainproj.classList.toggle('active');
 }
 
 
@@ -58,3 +64,9 @@ function sendMail() {
         alert("Success!" + res.status);
     })
 }
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit's Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onClick=hideSidebar()><a href="#"><img src="./images/close-icon.png" alt="close-icon"></a></li>
+            <li><a href="./index.html#home">HOME</a></li>
+            <li><a href="./index.html#about">ABOUT</a></li>
+            <li><a href="./projects.html">PROJECTS</a></li>
+            <li><a href="./index.html#contact">CONTACT</a></li>
+            <li><div id="toggle"><i class="indicator"></i></div></li>
+        </ul>
+
+        <ul>
+            <li><a href="#" class="title-email">smit.mstr1@gmail.com</a></li>
+            <li class="hideOnMobile"><a href="./index.html#home">HOME</a></li>
+            <li class="hideOnMobile"><a href="./index.html#about">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="./projects.html">PROJECTS</a></li>
+            <li class="hideOnMobile"><a href="./index.html#contact">CONTACT</a></li>
+            <li class="hideOnMobile"><div id="toggle2"><i class="indicator"></i></div></li>
+            <li class="menu-button" onClick=showSidebar()><a href="#"><img src="./images/menu-icon.png" alt="menu-icon"></a></li>
+        </ul>
+    </nav>
+
+
+
+    <section id="single-project">
+        <div class="single-project">
+            <div class="single-project-slice">
+                <img src="./images/single-slice.png">
+            </div>
+            <div class="slide">
+                <h1>
+                    Voice Assistance <br>
+                    Using AI
+                </h1>
+                <div class="slide-container">
+                    <img src="./images/slider-button.png" class="slider-right slider-arrow">
+                    <img src="./images/slider-button.png" class="slider-left slider-arrow">
+                    <img src="./images/slider.png" class="slider">
+                </div> 
+            </div>
+
+            <p>
+                Implementing a Chatbot for Rajkot Municipal Corporation (RMC) serves as a pivotal advancement in streamlining public inquiries and service requests.This project leverages FastAPI, a modern, fast (high-performance) web framework <br> 
+                for building APIs with Python 3.7+ that is highly suitable for creating a chatbot backend due to its asynchronous request handling capabilities. By adhering to Pythonic best practices, such as using Pydantic models for data validation <br> 
+                and employing descriptive naming conventions, we ensure the system is both efficient and maintainable. Integrating this chatbot with the RMC's existing digital infrastructure  not only enhances citizen engagement by providing <br> 
+                instant responses to queries but also significantly reduces the workload on human staff, allowing them to focus on more complex issues.
+            </p>
+
+            <div class="single-buttons">
+                <button class="single-github-btn">
+                    <div class="btn-content">
+                        <img src="./images/github.svg" width="30px" height="30px">
+                        GITHUB
+                    </div>
+                </button>
+                <button class="single-contactme-btn">
+                    CONTACT ME
+                </button>
+            </div>
+
+            <div class="glimpse">
+                <h6>
+                    GLIMPSE OF PROJECT 
+                </h6>
+
+                <p>1. Distributed Database Management System In Action:</p>
+                <img src="./images/chatbot-1.png">
+                <p>2. Distributed Database Management System In Action:</p>
+                <img src="./images/ddbms 2.png">
+                <p>3. Distributed Database Management System In Action</p>
+                <img src="./images/ddbms 3.png">
+
+                <div class="single-buttons">
+                    <button class="single-github-btn">
+                        <div class="btn-content">
+                            <img src="./images/github.svg" width="30px" height="30px">
+                            GITHUB
+                        </div>
+                    </button>
+                    <button class="single-contactme-btn">
+                        CONTACT ME
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer">
+            <div class="first">
+                <h1>Smit Mistry</h1>
+                <p>AI & ML Engineer</p>
+            </div>
+    
+            <div class="second">
+                <a href="https://www.linkedin.com/in/smitm1/" class="contact-link">
+                    <img src="./images/linkedin.svg" class="foot-linkedin">
+                </a>
+                <a href="https://github.com/SmitM1" class="contact-link">
+                    <img src="./images/github.svg" class="foot-github">
+                </a>
+            </div>
+    
+            <div class="third">
+                <p>© Copyright Smit Mistry. All rights reserved</p>   
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
